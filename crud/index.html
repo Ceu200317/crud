@@ -14,43 +14,19 @@
       <button onclick="adicionarTarefa()">Adicionar</button>
     </div>
     <div id="lista-tarefas">
-      <div class="tarefa" data-id="1">
-        <span class="texto-tarefa">Comprar leite</span>
-        <div class="botoes-tarefa">
-          <button class="botao-editar">Editar</button>
-          <button class="botao-deletar">Deletar</button>
-        </div>
-      </div>
-      <div class="tarefa" data-id="2">
-        <span class="texto-tarefa">Estudar HTML</span>
-        <div class="botoes-tarefa">
-          <button class="botao-editar">Editar</button>
-          <button class="botao-deletar">Deletar</button>
-        </div>
-      </div>
-      <div class="tarefa" data-id="3">
-        <span class="texto-tarefa">Fazer exercícios</span>
-        <div class="botoes-tarefa">
-          <button class="botao-editar" onclick="abrirModal()" >Editar</button>
-          <button class="botao-deletar">Deletar</button>
-        </div>
-      </div>
     </div>
   </div>
 
   <div class="modal" id="modalEditar">
     <div class="conteudo-modal">
       <h3>Editar Tarefa</h3>
-      <input type="text" id="entradaEditarId" placeholder="ID da tarefa" disabled>
-      <input type="text" id="entradaEditar" placeholder="Texto da tarefa">
-      <button class="botao-salvar" onclick="salvarEdicao()">Salvar</button>
+      <input type="text" id="editar-id" placeholder="ID da tarefa" disabled>
+      <input type="text" id="editar-descricao" placeholder="Texto da tarefa">
+      <button class="botao-salvar" onclick="alterarTarefa()">Salvar</button>
       <button class="botao-cancelar" onclick="fecharModal()">Cancelar</button>
     </div>
   </div>
 
-
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
